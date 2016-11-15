@@ -1,14 +1,15 @@
-/************
- * DATABASE *
- ************/
-
-// /* hard-coded data */
-// var albums = [];
+var db = require("../models");
 
 
 // GET /api/albums
 function index(req, res) {
-  res.json({albums});//see why the curly brackets
+db.Album.find (function(err, album) {
+  if(err){
+    console.log(err);
+  }
+  res.json(album);//see why the curly brackets
+});
+
 }
 
 function create(req, res) {

@@ -1,5 +1,6 @@
 // SERVER-SIDE JAVASCRIPT
-
+//require models
+var db = require('./models');
 //require express in our app
 var express = require('express');
 // generate a new express app and call it 'app'
