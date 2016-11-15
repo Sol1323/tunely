@@ -4,7 +4,7 @@
 var db = require("./models");
 
 var albumsList =[
-  // put data here!
+
 ];
 
 db.Album.remove({}, function(err, albums){
